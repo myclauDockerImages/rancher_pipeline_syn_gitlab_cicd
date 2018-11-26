@@ -1,12 +1,12 @@
 # rancher_pipeline_syn_gitlab_cicd
-allow rancher pipeline to wait gitlab cicd finsh and do deployment
+allow rancher pipeline to wait gitlab cicd finsh and do deployment, Gitlab need at least version 10.2
 
 
 # Environment Variable (must be fill before using)
 | Env Variable | Description |
 | --- | --- |
 | `GITLAB_TOKEN` | this is the account for git lab , to create this login to gitlab > setting > access token > create |
-| `GITLAB_PIPELINE_URL` | this is the pipeline url show be something like `https://gitlab.example.com/api/v4/projects/:id/pipelines` to find it you can login gitlab > go to target project > Settings > CI/CD > Pipeline triggers press Expand > in example you will see the id of that project |
+| `GITLAB_PIPELINE_URL` | this is the pipeline url show be something like `https://gitlab.example.com/api/v4/projects/:id/pipelines` to find project id Enter the project -> On the Left Hand menu click Settings -> General -> Expand General Settings -> It has a label Project ID and is next to the project name |
 | `BRANCH` | this is the branch you are targeting |
 
 # How to use
