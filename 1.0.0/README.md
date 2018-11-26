@@ -10,4 +10,24 @@ allow rancher pipeline to wait gitlab cicd finsh and do deployment
 | `BRANCH` | this is the branch you are targeting |
 
 # How to use
-To be update
+setup the .rancger-pipeline.yml like this
+``` yml
+stages:
+- name: Wait docker image build ready in gitlab
+  steps:
+  - runScriptConfig:
+      image: myclau/rancher-pipeline-syn-gitlab-cicd
+      shellScript: docker-entrypoint.sh
+    env:
+      BRANCH: ${CICD_GIT_BRANCH}
+      GITLAB_PIPELINE_URL: ${URL}
+      GITLAB_TOKEN: ${TOKEN}
+- name: Deploy
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
+timeout: 60
+
+```
+
+
