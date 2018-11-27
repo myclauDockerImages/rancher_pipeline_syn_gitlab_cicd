@@ -7,8 +7,6 @@ allow rancher pipeline to wait gitlab cicd finsh and do deployment, Gitlab need 
 | --- | --- |
 | `GITLAB_TOKEN` | this is the account for git lab , to create this login to gitlab > setting > access token > create |
 | `GITLAB_PIPELINE_URL` | this is the pipeline url show be something like `https://gitlab.example.com/api/v4/projects/:id/pipelines` to find project id Enter the project -> On the Left Hand menu click Settings -> General -> Expand General Settings -> It has a label Project ID and is next to the project name |
-| `GITLAB_HOST` | Only use when `GITLAB_PIPELINE_URL` not set , define gitlabhost|
-| `GITLAB_PROJECTID` | Only use when `GITLAB_PIPELINE_URL` not set , define project id  to find it: Enter the project -> On the Left Hand menu click Settings -> General -> Expand General Settings -> It has a label Project ID and is next to the project name|
 | `BRANCH` | this is the branch you are targeting |
 
 # How to use

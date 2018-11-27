@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 status="pending"
 token=${GITLAB_TOKEN-"9koXpg98eAheJpvBs5tK"}
-pipelineurl=${GITLAB_PIPELINE_URL-"https://gitlab.example.com/api/v4/projects/1/pipelines"}
+pipelineurl=${GITLAB_PIPELINE_URL-"https://${GITLAB_HOST-gitlab.example.com}/api/v4/projects/${GITLAB_PROJECTID-1}/pipelines"}
 branch=${BRANCH-"new-pipeline"}
 
 while [ "$status" == "pending" ] || [ "$status" == "running" ];
