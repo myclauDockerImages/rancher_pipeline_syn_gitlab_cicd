@@ -29,6 +29,7 @@ stages:
 timeout: 60
 
 ```
+
 if you want to put token into secret:
 ```yml
 stages:
@@ -51,4 +52,5 @@ stages:
 timeout: 60
 
 ```
+
 

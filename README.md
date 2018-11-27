@@ -1,4 +1,4 @@
-# rancher_pipeline_syn_gitlab_cicd
+# rancher_pipeline_syn_gitlab_cicd (1.0.1)
 allow rancher pipeline to wait gitlab cicd finsh and do deployment, Gitlab need at least version 10.2
 
 
